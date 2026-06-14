@@ -4,4 +4,7 @@ services:
     container_name: portfolio
     ports:
       - "80:80"
+      - "443:443"
+    volumes:
+      - ./certs:/etc/nginx/certs:ro
     restart: unless-stopped
