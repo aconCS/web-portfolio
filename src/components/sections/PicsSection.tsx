@@ -9,9 +9,9 @@ const rightPics = [photo3, photo5];
 
 export default function PicsSection() {
   return (
-    <div className="w-full h-full flex items-center justify-center px-[40px]">
-      <div className="flex gap-[29px] h-[316px] w-[728px] max-w-full">
-        <div className="flex flex-col gap-[31px] flex-1 min-h-0">
+    <div className="w-full h-full flex items-center justify-center px-[20px] lg:px-[40px]">
+      <div className="flex gap-[15px] md:gap-[20px] lg:gap-[29px] h-[200px] md:h-[260px] lg:h-[316px] w-full max-w-[728px]">
+        <div className="flex flex-col gap-[15px] md:gap-[20px] lg:gap-[31px] flex-1 min-h-0">
           {leftPics.map((src, i) => (
             <div key={i} className="flex-1 min-h-0">
               <img src={src} alt="" className="w-full h-full object-cover" />
@@ -21,7 +21,7 @@ export default function PicsSection() {
         <div className="shrink-0 w-auto h-full">
           <img src={photo2} alt="" className="h-full w-auto" />
         </div>
-        <div className="flex flex-col gap-[31px] flex-1 min-h-0">
+        <div className="flex flex-col gap-[15px] md:gap-[20px] lg:gap-[31px] flex-1 min-h-0">
           {rightPics.map((src, i) => (
             <div key={i} className="flex-1 min-h-0">
               <img src={src} alt="" className="w-full h-full object-cover" />

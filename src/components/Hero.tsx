@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div className="flex flex-col-reverse md:flex-row gap-[24px] items-center justify-center shrink-0">
       <div className="w-[413px] shrink-0 flex justify-end max-w-full">
-        <p className="font-hitmo font-black text-[28px] text-primary-brown text-right leading-[normal]">
+        <p className="font-hitmo font-black text-[20px] md:text-[24px] lg:text-[28px] text-primary-brown text-right leading-[normal]">
           I{' '}
           <span className="text-accent-green">develop</span>
           {' '}websites and{' '}
@@ -24,10 +24,10 @@ export default function Hero() {
             <rect y="9.333" width="22" height="4.667" fill="#21468B" />
           </svg>
         </div>
-        <p className="font-hitmo font-black text-[48px] text-primary-brown leading-[normal] min-w-full">
+        <p className="font-hitmo font-black text-[32px] md:text-[40px] lg:text-[48px] text-primary-brown leading-[normal] min-w-full">
           Hey, I&rsquo;m Andreas
         </p>
-        <div className="flex gap-[10px] items-center whitespace-nowrap py-[5px]">
+        <div className="flex flex-wrap gap-[10px] items-center py-[5px]">
           <a
             href="https://cal.eu/aconcs"
             className="border border-primary-brown rounded-[10px] px-[10px] py-[5px] flex items-center gap-[5px] hover:bg-primary-brown/5 transition-colors"

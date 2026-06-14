@@ -1,6 +1,6 @@
 export default function CTFSection() {
   return (
-    <div className="flex flex-1 items-center justify-center min-w-0 gap-[80px] px-[40px]">
+    <div className="flex flex-col lg:flex-row flex-1 items-center justify-center min-w-0 gap-[30px] md:gap-[50px] lg:gap-[80px] px-[20px] lg:px-[40px]">
       <div className="font-kanit font-extralight text-[16px] text-primary-brown leading-[normal]">
         <p className="mb-0">
           <span className="font-kanit font-medium">CTF</span>
