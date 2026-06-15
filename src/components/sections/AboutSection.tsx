@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <div className="flex flex-1 items-center justify-center min-w-0">
+    <div className="flex items-center justify-center min-w-0">
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
         <div className="flex flex-col gap-2.5 items-center p-2.5 text-primary-brown order-2 lg:order-1">
           <p className="font-hitmo font-black text-[clamp(24px,5vw,36px)] leading-normal">Hobbies</p>

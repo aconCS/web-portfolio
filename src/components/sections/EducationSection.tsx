@@ -1,6 +1,6 @@
 export default function EducationSection() {
   return (
-    <div className="flex flex-1 items-center justify-center min-w-0">
+    <div className="flex items-center justify-center min-w-0">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 items-center">
         <div className="flex flex-col gap-2.5 items-start w-full lg:w-auto">
           <div className="flex flex-col text-primary-brown">

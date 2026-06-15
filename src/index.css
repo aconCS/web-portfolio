@@ -189,12 +189,26 @@
 
 html {
   height: 100%;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
+  scroll-padding-top: 80px;
+  scrollbar-width: thin;
+  scrollbar-color: #34271f33 transparent;
 }
 
 html::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #34271f33;
+  border-radius: 3px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #34271f55;
 }
 
 body {
@@ -205,22 +219,6 @@ body {
   font-family: 'Kanit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: transparent;
 }
 
 #root {

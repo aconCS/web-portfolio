@@ -15,7 +15,7 @@ const tools = [
 
 export default function ToolsSection() {
   return (
-    <div className="flex flex-col md:flex-row flex-1 items-center justify-center min-w-0 gap-8 md:gap-12 lg:gap-20 py-2.5">
+    <div className="flex flex-col md:flex-row items-center justify-center min-w-0 gap-8 md:gap-12 lg:gap-20 py-2.5">
       {tools.map((tool) => (
         <div key={tool.title} className="flex flex-col gap-2.5 items-center p-2.5 text-primary-brown">
           <p className="font-hitmo font-black text-[clamp(22px,4.5vw,36px)] leading-normal">{tool.title}</p>

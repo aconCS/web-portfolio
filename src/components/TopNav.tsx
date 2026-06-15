@@ -17,7 +17,7 @@ export default function TopNav({ sections, activeSection, onNavClick }: TopNavPr
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 md:px-10 lg:px-14 py-2.5 h-16 md:h-20 bg-secondary-white/80 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 md:px-10 lg:px-14 py-2.5 h-16 md:h-20 bg-transparent">
       <button
         onClick={() => onNavClick('about')}
         className="h-7 md:h-8 w-auto shrink-0 cursor-pointer"
