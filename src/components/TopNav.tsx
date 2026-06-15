@@ -26,7 +26,7 @@ export default function TopNav({ sections, activeSection, onNavClick }: TopNavPr
         <img src={logotypeSvg} alt="" className="h-full w-auto object-contain" />
       </button>
 
-      <div className="hidden md:flex items-center font-kanit text-3xl text-primary-brown leading-normal shrink-0">
+      <div className="hidden md:flex items-center font-hitmo font-black text-lg text-primary-brown leading-normal shrink-0">
         {sections.map((section, i) => (
           <span key={section.id}>
             {i > 0 && <span className="mx-1 shrink-0 font-light opacity-50">.</span>}
@@ -34,8 +34,8 @@ export default function TopNav({ sections, activeSection, onNavClick }: TopNavPr
               onClick={() => onNavClick(section.id)}
               className={`whitespace-nowrap cursor-pointer hover:opacity-100 transition-opacity ${
                 activeSection === section.id
-                  ? 'font-black opacity-100'
-                  : 'font-light opacity-50'
+                  ? 'opacity-100'
+                  : 'opacity-50'
               }`}
             >
               {section.label}

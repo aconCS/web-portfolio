@@ -12,7 +12,7 @@ export default function PicsSection() {
     <div className="w-full flex items-center justify-center">
       <div className="flex gap-3 sm:gap-4 md:gap-5 lg:gap-7 w-full max-w-4xl"
         style={{ height: 'clamp(280px, 70vw, 700px)' }}>
-        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-7 flex-1 min-h-0 min-w-0">
+        <div className="flex flex-col gap-0.5 sm:gap-1 flex-1 min-h-0 min-w-0">
           {leftPics.map((src, i) => (
             <div key={i} className="flex-1 min-h-0 overflow-hidden">
               <img src={src} alt="" className="w-full h-full object-cover" />
@@ -21,9 +21,9 @@ export default function PicsSection() {
         </div>
         <div className="shrink-0 -my-[clamp(20px,4vw,50px)] w-auto max-w-[35%]">
           <img src={photo2} alt="" className="h-full w-full object-cover"
-            style={{ height: 'calc(100% + clamp(40px, 8vw, 100px))', objectPosition: '50% 50%' }} />
+            style={{ height: 'calc(100% + clamp(40px, 8vw, 100px))' }} />
         </div>
-        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-7 flex-1 min-h-0 min-w-0">
+        <div className="flex flex-col gap-0.5 sm:gap-1 flex-1 min-h-0 min-w-0">
           {rightPics.map((src, i) => (
             <div key={i} className="flex-1 min-h-0 overflow-hidden">
               <img src={src} alt="" className="w-full h-full object-cover" />

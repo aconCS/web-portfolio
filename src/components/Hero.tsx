@@ -16,8 +16,20 @@ export default function Hero() {
         <p className="font-hitmo font-black text-[clamp(24px,6vw,48px)] text-primary-brown leading-normal">
           Hey, I&rsquo;m Andreas
         </p>
-        <div className="flex flex-col gap-2.5 py-1.5">
-          <div className="flex gap-2.5 items-center">
+        <p className="font-hitmo font-black text-[clamp(16px,3.5vw,28px)] text-primary-brown leading-normal md:hidden">
+          I{' '}
+          <span className="text-accent-green">develop</span>
+          {' '}websites
+          <br />
+          and{' '}
+          <span className="text-accent-orange">hack</span>
+          {' '}them
+          <br />
+          before{' '}
+          <span className="text-accent-red">attackers</span>
+          {' '}do.
+        </p>
+        <div className="flex gap-2.5 items-center py-1.5 flex-wrap">
             <a
               href="mailto:2005acon@gmail.com"
               className="flex items-center gap-1.5 hover:opacity-70 transition-opacity"
@@ -50,22 +62,21 @@ export default function Hero() {
               </svg>
               <span className="font-kanit font-light text-base sm:text-xl text-primary-brown leading-normal whitespace-nowrap">github</span>
             </a>
+            <a
+              href="https://cal.eu/aconcs"
+              className="border border-primary-brown rounded-[10px] px-2.5 py-1.5 flex items-center gap-1.5 hover:bg-primary-brown/5 transition-colors"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-primary-brown shrink-0">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              <span className="font-kanit font-light text-base sm:text-xl text-primary-brown leading-normal whitespace-nowrap">Book meeting</span>
+            </a>
           </div>
-          <a
-            href="https://cal.eu/aconcs"
-            className="border border-primary-brown rounded-[10px] px-2.5 py-1.5 flex items-center gap-1.5 hover:bg-primary-brown/5 transition-colors w-fit"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-primary-brown shrink-0">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-              <line x1="16" y1="2" x2="16" y2="6" />
-              <line x1="8" y1="2" x2="8" y2="6" />
-              <line x1="3" y1="10" x2="21" y2="10" />
-            </svg>
-            <span className="font-kanit font-light text-base sm:text-xl text-primary-brown leading-normal whitespace-nowrap">Book meeting</span>
-          </a>
-        </div>
       </div>
-      <div className="w-full md:max-w-[450px] shrink-0">
+      <div className="w-full md:max-w-[450px] shrink-0 hidden md:block">
         <p className="font-hitmo font-black text-[clamp(16px,3.5vw,28px)] text-primary-brown md:text-right leading-normal">
           I{' '}
           <span className="text-accent-green">develop</span>
