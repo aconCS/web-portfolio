@@ -8,7 +8,6 @@ import EducationSection from './components/sections/EducationSection';
 import ToolsSection from './components/sections/ToolsSection';
 import DesignsSection from './components/sections/DesignsSection';
 import CTFSection from './components/sections/CTFSection';
-import PicsSection from './components/sections/PicsSection';
 
 const sections = [
   { id: 'about', label: 'About', component: AboutSection },
@@ -16,7 +15,6 @@ const sections = [
   { id: 'tools', label: 'Tools', component: ToolsSection },
   { id: 'designs', label: 'Designs', component: DesignsSection },
   { id: 'ctf', label: 'CTF', component: CTFSection },
-  { id: 'pics', label: 'Pics', component: PicsSection },
 ];
 
 export default function App() {
