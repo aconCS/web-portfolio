@@ -15,13 +15,13 @@ const tools = [
 
 export default function ToolsSection() {
   return (
-    <div className="flex flex-col md:flex-row flex-1 items-center justify-center min-w-0 gap-[30px] md:gap-[60px] lg:gap-[125px] px-[20px] md:px-[40px] lg:px-[60px] py-[10px]">
+    <div className="flex flex-col md:flex-row flex-1 items-center justify-center min-w-0 gap-8 md:gap-12 lg:gap-20 py-2.5">
       {tools.map((tool) => (
-        <div key={tool.title} className="flex flex-col gap-[10px] items-center p-[10px] text-primary-brown">
-          <p className={`font-hitmo font-black leading-[normal] ${tool.title === 'Design' ? 'text-[28px]' : 'text-[36px]'}`}>{tool.title}</p>
-          <div className="flex flex-col font-kanit font-light text-[20px] leading-[normal] text-center">
+        <div key={tool.title} className="flex flex-col gap-2.5 items-center p-2.5 text-primary-brown">
+          <p className="font-hitmo font-black text-[clamp(22px,4.5vw,36px)] leading-normal">{tool.title}</p>
+          <div className="flex flex-col font-kanit font-light text-base sm:text-xl leading-normal text-center">
             {tool.items.map((item) => (
-              <p key={item} className="mb-0">{item}</p>
+              <p key={item}>{item}</p>
             ))}
           </div>
         </div>

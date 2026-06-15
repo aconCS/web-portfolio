@@ -1,11 +1,9 @@
 export default function Footer() {
   return (
-    <div className="w-full flex items-center justify-center overflow-clip shrink-0">
-      <div className="flex items-center justify-center px-[20px] md:px-[50px] py-[10px]">
-        <p className="font-kanit font-extralight text-[14px] md:text-[16px] text-primary-brown text-center">
-          Built with React - Deployed on VPS via nginx - Repo - Design Files
-        </p>
-      </div>
-    </div>
+    <footer className="w-full flex items-center justify-center py-2.5 px-5 md:px-10 lg:px-14">
+      <p className="font-kanit font-extralight text-[clamp(12px,2vw,16px)] text-primary-brown text-center">
+        Built with React - Deployed on VPS via nginx - Repo - Design Files
+      </p>
+    </footer>
   );
 }

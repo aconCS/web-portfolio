@@ -17,26 +17,26 @@ export default function TopNav({ sections, activeSection, onNavClick }: TopNavPr
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[20px] md:px-[50px] lg:px-[80px] py-[10px] h-[100px] bg-secondary-white/80 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 md:px-10 lg:px-14 py-2.5 h-16 md:h-20 bg-secondary-white/80 backdrop-blur-sm">
       <button
         onClick={() => onNavClick('about')}
-        className="h-[31px] w-[123px] shrink-0 relative cursor-pointer"
+        className="h-7 md:h-8 w-auto shrink-0 cursor-pointer"
         aria-label="Home"
       >
         <img src={logotypeSvg} alt="" className="h-full w-auto object-contain" />
       </button>
 
-      <div className="hidden lg:flex items-center font-kanit font-light text-[20px] text-primary-brown leading-[normal] shrink-0">
-        Available for freelance or employment
-      </div>
-
-      <div className="hidden md:flex lg:hidden items-center font-kanit text-[18px] text-primary-brown leading-[normal] shrink-0">
+      <div className="hidden md:flex items-center font-kanit text-3xl text-primary-brown leading-normal shrink-0">
         {sections.map((section, i) => (
           <span key={section.id}>
             {i > 0 && <span className="mx-1 shrink-0 font-light opacity-50">.</span>}
             <button
               onClick={() => onNavClick(section.id)}
-              className={`whitespace-nowrap cursor-pointer hover:opacity-100 ${activeSection === section.id ? 'font-black text-[20px]' : 'font-light opacity-50'}`}
+              className={`whitespace-nowrap cursor-pointer hover:opacity-100 transition-opacity ${
+                activeSection === section.id
+                  ? 'font-black opacity-100'
+                  : 'font-light opacity-50'
+              }`}
             >
               {section.label}
             </button>
@@ -69,7 +69,7 @@ export default function TopNav({ sections, activeSection, onNavClick }: TopNavPr
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 top-[100px] bg-secondary-white z-40 flex flex-col items-center justify-center gap-[30px]"
+            className="fixed inset-0 top-full bg-secondary-white z-40 flex flex-col items-center justify-center gap-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -82,10 +82,10 @@ export default function TopNav({ sections, activeSection, onNavClick }: TopNavPr
                   onNavClick(section.id);
                   setMenuOpen(false);
                 }}
-                className={`font-kanit leading-[normal] cursor-pointer select-none ${
+                className={`font-kanit leading-normal cursor-pointer select-none ${
                   activeSection === section.id
-                    ? 'font-black text-[28px] text-primary-brown'
-                    : 'font-light text-[24px] text-primary-brown opacity-60'
+                    ? 'font-black text-2xl sm:text-3xl text-primary-brown'
+                    : 'font-light text-xl sm:text-2xl text-primary-brown opacity-60'
                 }`}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
